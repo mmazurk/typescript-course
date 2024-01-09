@@ -1,9 +1,9 @@
-function add(
+function addUp(
   n1: number,
   n2: number,
   showResult: boolean,
   resultPhrase: string
-) {
+): any {
   if (showResult) {
     const result = n1 + n2;
     console.log(resultPhrase + result);
@@ -14,8 +14,8 @@ function add(
 
 const number1 = 5;
 const number2 = 2.8;
-const printResult = true;
+let printThis = true;
 const resultPhrase = "The result is ...";
 
-const result = add(number1, number2, printResult, resultPhrase);
+const result = addUp(number1, number2, printThis, resultPhrase);
 console.log(result);
